@@ -34,6 +34,7 @@ function App() {
 
   React.useEffect(()=>{
     fetchWeatherData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentPage])
 
   const convertToCelcius = (kelvin)=>{
