@@ -1,0 +1,60 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-head{
+    color: #D3D3D3;
+}
+.map_container{
+    width: 50vw;
+    height: 70vh;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+#sun{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20rem;
+}
+
+#clouds{
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    z-index: 10;
+    animation: mover 10s alternate infinite;
+}
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100rem);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .map_container{
+        width: 80vw;
+    }
+   #clouds{
+    display: none;
+   }
+}

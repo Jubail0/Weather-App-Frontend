@@ -1,0 +1,41 @@
+.pagination_container{
+    width: 50vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+   
+    
+}
+
+.number-box{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #D3D3D3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: slateblue;
+    background-color: #fff;
+    
+}
+
+.left_arrow-box{
+    border-radius: 0.3rem 0 0 0.3rem;
+    
+
+}
+.right_arrow-box{
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.number-box > span{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.number-box:hover{
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.3);
+}
